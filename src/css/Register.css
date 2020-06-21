@@ -1,0 +1,33 @@
+.register{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 200px 600px;
+    width: 600px;
+    height: 400px;
+}
+.register h1,p{
+    text-align: center;
+}
+.label{
+    display: inline-block;
+    margin-bottom: 8px;
+    vertical-align: top;
+    width: 10em;
+    text-align: right;
+}
+.register .button,button{
+    width: 300px;
+    padding:8px;
+    background-color: aliceblue;
+    color: black;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; /* future proofing */
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    font-weight: 900;
+    font-size:125%;
+    margin-bottom: 8px;
+    margin-top: 20px;
+}

@@ -1,0 +1,43 @@
+figure img {
+    border: 1px solid #666;
+    background-color: #FFF;
+    padding: 4px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,.5);
+    margin-bottom: 15px;
+}
+
+figcaption {
+    font: 1.1em Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+figure {
+    display: inline-block;
+    vertical-align: top;
+    width: 210px;
+    margin: 0 60px 60px 20px;
+}
+.first_image{
+    padding: 0;
+    background-size: cover;
+    margin-left: 140%;
+}
+h1{
+    text-align: center;
+
+}
+.image{
+    width: 190px;
+    height:190px;
+}
+.reload{
+    text-align: center;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    width:80px;
+    height: 80px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,.5);
+}

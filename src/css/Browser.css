@@ -1,0 +1,88 @@
+td{
+    border: 1px solid black;
+    border-spacing: 0;
+    width: 30%;
+    text-align: center;
+    color: cornflowerblue;
+    height: 40px;
+}
+
+th {
+    border-spacing: 0;
+    width: 30%;
+    text-align: left;
+    height: 40px;
+
+}
+table {border-collapse: collapse}
+.main{
+    left: 24%;
+    position: absolute;
+    top:20px;
+
+}
+.sidebar{
+    width: 350px;
+}
+input{
+    width: 275px;
+    height:30px;
+}
+.filter select{
+    width: 300px;
+    padding:8px;
+    background-color: aliceblue;
+    color: black;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; /* future proofing */
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    font-weight: 900;
+    font-size:125%
+}
+.filter button{
+    width: 300px;
+    padding:8px;
+    background-color: aliceblue;
+    color: black;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; /* future proofing */
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    font-weight: 900;
+    font-size:125%
+}
+.filter p{
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 0;
+}
+figure img {
+    border: 1px solid #666;
+    background-color: #FFF;
+    padding: 4px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,.5);
+}
+figure {
+    display: inline-block;
+    vertical-align: top;
+    width: 210px;
+    margin: 0 60px 60px 20px;
+}
+.gallery{
+    margin-top: 30px;
+}
+footer{
+    position: absolute;
+    top:1300px;
+}
+.first_page:hover,.page:hover,.last_page:hover{
+    background-color: darkgray;
+}
+.first_page:hover,.page:hover,.last_page:hover,.on{
+    background-color: darkgray;
+}

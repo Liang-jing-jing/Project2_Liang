@@ -1,0 +1,32 @@
+
+h1{
+    text-align: center;
+    font-size: 5em;
+}
+h2{
+    font-size: 1em;
+    font-weight: bold;
+}
+.information{
+    margin:0 200px;
+    border: black;
+    border-radius: 5px;
+}
+button{
+    width: 300px;
+    padding:8px;
+    background-color: red;
+    color: white;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; /* future proofing */
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    font-weight: 900;
+    font-size:125%;
+    margin-bottom: 20px;
+}
+footer{
+    margin-bottom: 0;
+}

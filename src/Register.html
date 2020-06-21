@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/Main.css">
+    <link rel="stylesheet" href="css/Register.css">
+</head>
+<body>
+    <div class="register">
+        <h1>Register</h1>
+        <form action="../php/RegisterCheck.php" method="post">
+            <p><label><span class="label">User name:</span><input type="text" name="name" id="username" onkeyup="value=value.replace(/[\W]/g,'');userName()" required/><span id="note0"></span></label></p>
+            <p><span class="label">Email:</span><label for="email"></label><input type="email" id="email" onkeyup="emailValidate()" name="email" required><span id="emailNote"></span></p>
+            <P><span class="label">Password:</span> <label for="pw1"></label><input type="password" name="pw" id="pw1" onkeyup="value=value.replace(/[^\d|a-zA-Z]/g,'');pswValidate()" required/><span id="note1"></span></P>
+            <p><span class="label">Confirm Password:</span> <label for="pw2"></label><input type="password" name="pw" id="pw2" onkeyup="validate()" required/><span id="note"></span></p>
+            <p><button type="submit" id="submit" value="submit" name="submit">Registered</button><br>
+                </p>
+        </form>
+        <script>
+            function userName() {
+                const name = document.getElementById("name").value;
+                if(/^[A-Za-z0-9]{1,15}$/.test(name)){
+                    document.getElementById("note0").innerHTML="<font color='green'>*</font>";
+                    document.getElementById("submit").disabled = false;
+                }
+                else {
+                    document.getElementById("note0").innerHTML="<font color='red'>*1-15位可包含大小写字母和数字</font>";
+                    document.getElementById("submit").disabled = true;
+                }
+            }
+            function validate() {
+                const pw1 = document.getElementById("pw1").value;
+                const pw2 = document.getElementById("pw2").value;
+                if(pw1 === pw2) {
+                    document.getElementById("note").innerHTML="<font color='green'>*</font>";
+                    document.getElementById("submit").disabled = false;
+                }
+                else {
+                    document.getElementById("note").innerHTML="<font color='red'>*</font>";
+                    document.getElementById("submit").disabled = true;
+                }
+            }
+            function emailValidate() {
+                const email = document.getElementById("email").value;
+                if(/^([a-zA-Z0-9._-])+@([a-zA-Z0-9_-])+(\.[a-zA-Z0-9_-])+/.test(email)){
+                    document.getElementById("emailNote").innerHTML="<font color='green'>*</font>";
+                    document.getElementById("submit").disabled = false;
+                }
+                else {
+                    document.getElementById("emailNote").innerHTML="<font color='red'>*两次密码要相同</font>";
+                    document.getElementById("submit").disabled = true;
+                }
+            }
+            function pswValidate() {
+                const psw = document.getElementById("pw1").value;
+                if (/(?![0-9A-Z]+$)(?![0-9a-z]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,18}$/.test(psw)){
+                    document.getElementById("note1").innerHTML="<font color='green'>*</font>";
+                    document.getElementById("submit").disabled = false;
+                }
+                else{
+                    document.getElementById("note1").innerHTML="<font color='red'>*大小写字母和数字都要有</font>";
+                    document.getElementById("submit").disabled = true;
+                }
+            }
+        </script>
+    </div>
+
+    <footer id="footer">
+        <p>@肥仔阿亮</p>
+        <p>Email:19302010061@fudan.edu.cn</p>
+        <p>Tel:15901984704</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,41 @@
+.log_in{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 200px 600px;
+    width: 600px;
+    height: 320px;
+    background-color: white;
+    box-shadow: 2px 2px 4px rgba(5,5,5,1.5);
+}
+.log_in h1,p{
+    text-align: center;
+}
+.label{
+    display: inline-block;
+    width: 19em;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    text-align: right;
+    vertical-align: top;
+}
+.log_in a{
+    margin-left: 270px;
+}
+.submit{
+    width: 300px;
+    padding:8px;
+    background-color: aliceblue;
+    color: black;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; /* future proofing */
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    font-weight: 900;
+    font-size:125%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 170px;
+
+}

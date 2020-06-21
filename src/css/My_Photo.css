@@ -1,0 +1,38 @@
+.detail{
+    margin: 20px;
+}
+p,.detail h1{
+    text-align: center;
+}
+.detail figure img{
+    margin-right: 20px;
+}
+.information{
+    border: 1px solid darkgrey;
+    border-bottom: none;
+}
+.detail button{
+    width: 100px;
+    background-color: aliceblue;
+    color: black;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; /* future proofing */
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: 8px 6px 8px 8px;
+}
+figcaption p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.first_page:hover,.page:hover,.last_page:hover{
+    background-color: darkgray;
+}
+.first_page:hover,.page:hover,.last_page:hover,.on{
+    background-color: darkgray;
+}
