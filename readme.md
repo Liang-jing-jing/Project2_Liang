@@ -105,3 +105,4 @@
 本次PJ，我尝试了Bonus3，尝试部署服务器。
 服务器ip：121.89.199.66
 由于服务器Apache和PHP还未完全安装好，所以PJ2尚未完全部署在服务器中。
+静态网址：http://localhost:63342/Project2_Liang/index.php?_ijt=k8qloohrgn480qremocbf0s42o
